@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function first()
+        {
+        var a = prompt();
+        var b = prompt();
+        var c = prompt();
+       
+        if(isNaN(a)||isNaN(b)||isNaN(c))
+        {
+        document.write("Invalid")
+        }
+        else{determinetriangle(a,b,c);
+        }
+    
+        }
+        
+        function determinetriangle(a, b, c)
+        {
+            if (a === b && b === c){
+           alert("THE TRIANGLE IS EQUILATERAL");
+          }else if (a === b || b === c || a === c) {
+          alert("THE TRIANGLE IS ISOSCELES");
+          }else{
+           alert("THE TRIANGLE IS SCALENE");
+
+           
+        }
+    }
+       first();
+        
+    </script>
+</body>
+</html>
